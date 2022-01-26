@@ -7,3 +7,6 @@ doCollision = true
 vulnerable = true
 damageCooldown = 0
 cooldownRate = 60
+canSwim = false
+grounded = false
+walled = false

@@ -12,6 +12,14 @@ if(vspeed < 20 && doGrav){
 	vspeed += 1
 }
 
+if(!canSwim){
+	if(place_meeting(x, y, Water_obj)){
+		hspeed = hspeed / 2
+		vspeed = vspeed / 1.2
+	}
+}
+
+
 var tempH = abs(hspeed)
 var tempV = abs(vspeed)
 if(doCollision){
@@ -28,3 +36,23 @@ if(doCollision){
 }
 hspeed = tempH * sign(hspeed)
 vspeed = tempV * sign(vspeed)
+
+if(place_meeting(x + hspeed, y + vspeed, Solid_super_obj)){
+	hspeed = 0
+	vspeed = 0
+}
+
+if(place_meeting(x, y + 4, Solid_super_obj)){
+	grounded = true
+	if(abs(vspeed) < 1){
+		vspeed = 0
+	}
+}else{
+	grounded = false
+}
+
+if(place_meeting(x + (2 * sign(hspeed)), y, Solid_super_obj)){
+	walled = true
+}else{
+	walled = false
+}

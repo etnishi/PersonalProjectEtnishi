@@ -3,11 +3,10 @@
 
 draw_self()
 
-armXoff = 0
 if(r_dir){
-	armXoff = 64
+	armXoff = -16
 }else if(l_dir){
-	armXoff = 0
+	armXoff = 80
 }
 
-draw_sprite_ext(Player_arm_spr, 0, x + armXoff, y + 45, 1, 1, aimAngle, c_white, 1)
+draw_sprite_ext(Player_arm_spr, 0, x + armXoff, y - 16, 1, 1, aimAngle, c_white, 1)

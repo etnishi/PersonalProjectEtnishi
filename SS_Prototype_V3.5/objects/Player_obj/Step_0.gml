@@ -1,21 +1,17 @@
 /// @description Player Step Event
 // You can write your code in this editor
-if(place_meeting(x, y + 4, Solid_super_obj)){
-	grounded = true
-}else{
-	grounded = false
-}
+
 
 if(global.keybinds[8]){	// ranged attacking aim / shoot
-	aimAngle = point_direction(x, y, mouse_x, mouse_y)
+	aimAngle = point_direction( x + armXoff, y - 16, mouse_x, mouse_y)
 	if(mouse_check_button_pressed(mb_left)){
 		// arr [ damage, speed, cooldown, cost, range, bonusScripts]
 		//lengthdir_x(32, direction + 45)
-		create_Bullet( x + armXoff + lengthdir_x(80, aimAngle), y + 45 + lengthdir_y(80, aimAngle), aimAngle, [5, 30, 10, 10, 60, [Split_three]])
+		//create_Bullet( x + armXoff + lengthdir_x(90, aimAngle), y + 45 + lengthdir_y(90, aimAngle), aimAngle, [5, 30, 10, 10, 60, [Split_three]])
 	}
 	if(mouse_check_button_pressed(mb_right)){
 		// arr [ damage, speed, cooldown, cost, range, bonusScripts]
-		create_Bullet( x + armXoff + lengthdir_x(80, aimAngle), y + 45 + lengthdir_y(80, aimAngle),aimAngle, [15, 10, 20, 50, 512, [Light_Tracking, Speed_up]])
+		create_Bullet( x + armXoff + lengthdir_x(80, aimAngle), y - 16 + lengthdir_y(80, aimAngle), aimAngle, [15, 10, 20, 50, 512, [Light_Tracking, Speed_up]])
 		
 	}
 }else{
@@ -76,8 +72,11 @@ if(global.keybinds[9]){	// 0 w, 1 a, 2 s, 3 d
 
 
 
-
 event_inherited()
+
+
+
+
 /*
 global.playerArr[0] = 123456	// ID
 global.playerArr[1] = "Name"	// name

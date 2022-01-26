@@ -24,13 +24,13 @@ if keyboard_check_pressed(global.keybinds[2]){
 // 1, 3
 if(keyboard_check_pressed(global.keybinds[1])){
 	if(!is_string(arr[curInd][1])){
-		var tmp = arr[curInd][1](-1)
+		//var tmp = arr[curInd][1](-1)
 	}
 }
 
 if(keyboard_check_pressed(global.keybinds[3])){
 	if(!is_string(arr[curInd][1])){
-		var tmp = arr[curInd][1](1)
+		//var tmp = arr[curInd][1](1)
 	}
 }
 

@@ -3,7 +3,6 @@
 
 faced_dir = 1	// 0 left, 1 right, 2 in Air
 head_dir = 3	// 0 up, 1 left, 2 down, 3 right
-grounded = false
 l_dir = false
 r_dir = false
 u_dir = false

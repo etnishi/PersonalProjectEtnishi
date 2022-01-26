@@ -11,4 +11,5 @@ damaged = []	// array of damaged entities that can't be hit again
 
 range = 60
 
-firstStep = true // code that executes on first step only
+Step = 0 // code that executes on first step only
+

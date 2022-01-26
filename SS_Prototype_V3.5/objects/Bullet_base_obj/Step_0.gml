@@ -10,10 +10,16 @@ for(var i = 0; i < array_length(arr[5]); i++){
 	arr[5][i]()
 }
 
-if (firstStep){
-	firstStep = false
+if(Step == 0){
+	Step ++
 	range = arr[4]
 	speed = arr[1]
+}else{
+	if(Step < 10)
+		Step ++
+	else
+		Step = 1
+	
 }
 
 
