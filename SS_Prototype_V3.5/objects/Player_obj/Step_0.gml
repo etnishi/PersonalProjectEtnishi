@@ -21,18 +21,34 @@ if(global.keybinds[8]){	// ranged attacking aim / shoot
 if(global.keybinds[9]){	// 0 w, 1 a, 2 s, 3 d
 	var lIn = keyboard_check(global.keybinds[1])
 	var rIn = keyboard_check(global.keybinds[3])
-	if(lIn != rIn){
-		if(lIn){
-			r_dir = false
-			l_dir = true
-			hspeed = -global.playerArr[8]
-		}else if(rIn){
-			l_dir = false
-			r_dir = true
-			hspeed = global.playerArr[8]
+	if(dashing <= 20){
+		if(lIn != rIn){
+			if(lIn){
+				r_dir = false
+				l_dir = true
+				hspeed = -global.playerArr[8]
+			}else if(rIn){
+				l_dir = false
+				r_dir = true
+				hspeed = global.playerArr[8]
+			}
+		}else{
+			hspeed = 0
 		}
 	}else{
-		hspeed = 0
+		dashing --
+		if(dashing > 20){
+			vspeed = -1
+			if(r_dir){
+				hspeed = 30
+			}else if(l_dir){
+				hspeed = -30
+			}
+		}
+	}
+	
+	if(keyboard_check_pressed(global.keybinds[6])){
+		dashing = 30
 	}
 	
 	if(grounded){
@@ -48,7 +64,13 @@ if(global.keybinds[9]){	// 0 w, 1 a, 2 s, 3 d
 		}
 		if(keyboard_check_released(global.keybinds[5])){
 			jumpTimer = 0
-			vspeed += 1
+			vspeed += 15
+		}
+	}else{
+		if(global.playerArr[14][2] > 0 && vspeed > 0){
+			if(keyboard_check(global.keybinds[5])){
+				vspeed -= 0.95
+			}
 		}
 	}
 	

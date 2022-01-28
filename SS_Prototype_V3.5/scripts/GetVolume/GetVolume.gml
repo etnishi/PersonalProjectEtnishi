@@ -3,3 +3,4 @@
 function GetVolume(){
 	return "< " + string(global.config[3]) + " >"
 }
+

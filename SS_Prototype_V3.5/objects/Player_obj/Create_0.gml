@@ -8,6 +8,8 @@ r_dir = false
 u_dir = false
 d_dir = false
 
+dashing = 0
+
 armXoff = 0
 
 jumpTimer = 0 
