@@ -1,6 +1,8 @@
 /// @description Player Step Event
 // You can write your code in this editor
 
+if(battleStance > 0)
+	battleStance --
 
 if(global.keybinds[8]){	// ranged attacking aim / shoot
 	aimAngle = point_direction( x + armXoff, y - 16, mouse_x, mouse_y)
@@ -11,17 +13,22 @@ if(global.keybinds[8]){	// ranged attacking aim / shoot
 	}
 	if(mouse_check_button_pressed(mb_right)){
 		// arr [ damage, speed, cooldown, cost, range, bonusScripts]
+		battleStance = 120
 		create_Bullet( x + armXoff + lengthdir_x(80, aimAngle), y - 16 + lengthdir_y(80, aimAngle), aimAngle, [15, 10, 20, 50, 512, [Light_Tracking, Speed_up]])
 		
 	}
 }else{
 	// controller aiming input
 }
-
+if(dashing > 0){
+	dashing --
+}
+	
 if(global.keybinds[9]){	// 0 w, 1 a, 2 s, 3 d
 	var lIn = keyboard_check(global.keybinds[1])
 	var rIn = keyboard_check(global.keybinds[3])
-	if(dashing <= 20){
+	
+	if(dashing <= 40){
 		if(lIn != rIn){
 			if(lIn){
 				r_dir = false
@@ -33,11 +40,13 @@ if(global.keybinds[9]){	// 0 w, 1 a, 2 s, 3 d
 				hspeed = global.playerArr[8]
 			}
 		}else{
+			l_dir = false
+			r_dir = false
 			hspeed = 0
+			
 		}
 	}else{
-		dashing --
-		if(dashing > 20){
+		if(dashing > 40 && (l_dir or r_dir)){
 			vspeed = -1
 			if(r_dir){
 				hspeed = 30
@@ -48,15 +57,19 @@ if(global.keybinds[9]){	// 0 w, 1 a, 2 s, 3 d
 	}
 	
 	if(keyboard_check_pressed(global.keybinds[6])){
-		dashing = 30
+		if(dashing == 0)
+			dashing = 50
 	}
 	
-	if(grounded){
+	if(grounded){	// Abilities that require being grounded
 		if(keyboard_check_pressed(global.keybinds[5])){
 			jumpTimer = global.playerArr[9]
 			vspeed = -20
 		}
+	}else{
+		
 	}
+	
 	if(jumpTimer > 0){
 		jumpTimer --
 		if(keyboard_check(global.keybinds[5])){
@@ -70,6 +83,8 @@ if(global.keybinds[9]){	// 0 w, 1 a, 2 s, 3 d
 		if(global.playerArr[14][2] > 0 && vspeed > 0){
 			if(keyboard_check(global.keybinds[5])){
 				vspeed -= 0.95
+				if(vspeed > 4)
+					vspeed -= 0.06
 			}
 		}
 	}
@@ -95,7 +110,6 @@ if(global.keybinds[9]){	// 0 w, 1 a, 2 s, 3 d
 
 
 event_inherited()
-
 
 
 

@@ -9,4 +9,11 @@ if(r_dir){
 	armXoff = 80
 }
 
-draw_sprite_ext(Player_arm_spr, 0, x + armXoff, y - 16, 1, 1, aimAngle, c_white, 1)
+if(dashing == 1){
+	effect_create_above(ef_ring, x + 32, y + 16, 1, c_white)
+}
+
+if(battleStance > 0)
+	draw_sprite_ext(Player_arm_spr, 0, x + armXoff, y - 16, 1, 1, aimAngle, c_white, 1)
+else
+	draw_sprite_ext(Player_arm_spr, 0, x + armXoff, y - 16, 1, 1, 270, c_white, 1)

@@ -51,7 +51,7 @@ if(place_meeting(x, y + 4, Solid_super_obj)){
 	grounded = false
 }
 
-if(place_meeting(x + (2 * sign(hspeed)), y, Solid_super_obj)){
+if(place_meeting(x + 2, y, Solid_super_obj) or place_meeting(x - 2, y, Solid_super_obj)){
 	walled = true
 }else{
 	walled = false

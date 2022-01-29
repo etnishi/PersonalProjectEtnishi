@@ -8,6 +8,8 @@ r_dir = false
 u_dir = false
 d_dir = false
 
+battleStance = 0
+
 dashing = 0
 
 armXoff = 0
