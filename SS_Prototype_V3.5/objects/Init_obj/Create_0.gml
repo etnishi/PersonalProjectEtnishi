@@ -39,7 +39,7 @@ global.playerArr[11] = []		// gun bonuses
 								// bonusScript can add targeting or split the shot into three or increase damage
 global.playerArr[12] = []		// alt gun		same as gun but more costly and longer cooldown
 global.playerArr[13] = []		// alt gun bonuses can include stronger bonuses 
-global.playerArr[14] = [0, 1, 1, 0]		// abilities active
+global.playerArr[14] = [1, 1, 1, 1]		// abilities active
 //	List[dash, verticalMotion, slowFall, swim, ]
 global.playerArr[15] = [0, 0, 0, 0, 0]		// abilities passive / reactive
 /*	List[noDrag, hotRes, chillRes, dodgeJump, dodgeDash]

@@ -23,70 +23,100 @@ if(global.keybinds[8]){	// ranged attacking aim / shoot
 if(dashing > 0){
 	dashing --
 }
-	
+
 if(global.keybinds[9]){	// 0 w, 1 a, 2 s, 3 d
 	var lIn = keyboard_check(global.keybinds[1])
 	var rIn = keyboard_check(global.keybinds[3])
 	
-	if(dashing <= 40){
-		if(lIn != rIn){
-			if(lIn){
-				r_dir = false
-				l_dir = true
-				hspeed = -global.playerArr[8]
-			}else if(rIn){
-				l_dir = false
-				r_dir = true
-				hspeed = global.playerArr[8]
+	var uIn = keyboard_check(global.keybinds[0])
+	var dIn = keyboard_check(global.keybinds[2])
+	
+	if(knockback == 0){
+		
+		if(dashing <= 40){
+			if(lIn != rIn){
+				if(lIn){
+					r_dir = false
+					l_dir = true
+					hspeed = -global.playerArr[8]
+				}else if(rIn){
+					l_dir = false
+					r_dir = true
+					hspeed = global.playerArr[8]
+				}
+			}else{
+				hspeed = 0
+			
+			}
+			
+			if(grounded or (place_meeting(x, y, Water_obj) and (global.playerArr[14][3] = 2))){	// Abilities that require being grounded (can be used unrestricted in water if can swim level 2) 
+				if(keyboard_check_pressed(global.keybinds[5])){
+					jumpTimer = global.playerArr[9]
+					vspeed = -20
+				}
+			}else{
+		
+			}
+			
+			if(jumpTimer > 0){
+				jumpTimer --
+				if(keyboard_check(global.keybinds[5])){
+					vspeed -= 1
+				}
+				if(keyboard_check_released(global.keybinds[5])){
+					jumpTimer = 0
+					vspeed += -(vspeed / 2)
+				}
+			}else{
+				if(global.playerArr[14][2] > 0 && vspeed > 0){
+					if(keyboard_check(global.keybinds[5]) and (global.playerArr[14][2] = 1)){
+						vspeed -= 0.95
+						if(vspeed > 4)
+							vspeed -= 0.06
+					}
+				}
+			}
+			
+		}else{
+			if(dashing > 40){
+				if(u_dir and (global.playerArr[14][1] = 1)){
+					vspeed = -31
+				}else if(d_dir and (global.playerArr[14][1] = 1)){
+					vspeed = 29
+				}else if(r_dir){
+					vspeed = -1
+					hspeed = 30
+				}else if(l_dir){
+					vspeed = -1
+					hspeed = -30
+				}
+			}
+		}
+		
+		if(uIn != dIn){
+			if(uIn){
+				u_dir = true
+				d_dir = false
+				if(place_meeting(x, y, Water_obj) and (global.playerArr[14][3] = 1)){
+					vspeed = -11
+				}
+			}else if(dIn){
+				u_dir = false
+				d_dir = true
+				if(place_meeting(x, y, Water_obj) and (global.playerArr[14][3] = 2)){
+					vspeed = 9
+				}
 			}
 		}else{
-			l_dir = false
-			r_dir = false
-			hspeed = 0
-			
+			u_dir = false
+			d_dir = false
 		}
-	}else{
-		if(dashing > 40 && (l_dir or r_dir)){
-			vspeed = -1
-			if(r_dir){
-				hspeed = 30
-			}else if(l_dir){
-				hspeed = -30
-			}
-		}
-	}
-	
-	if(keyboard_check_pressed(global.keybinds[6])){
-		if(dashing == 0)
-			dashing = 50
-	}
-	
-	if(grounded){	// Abilities that require being grounded
-		if(keyboard_check_pressed(global.keybinds[5])){
-			jumpTimer = global.playerArr[9]
-			vspeed = -20
-		}
-	}else{
 		
 	}
 	
-	if(jumpTimer > 0){
-		jumpTimer --
-		if(keyboard_check(global.keybinds[5])){
-			vspeed -= 1
-		}
-		if(keyboard_check_released(global.keybinds[5])){
-			jumpTimer = 0
-			vspeed += 15
-		}
-	}else{
-		if(global.playerArr[14][2] > 0 && vspeed > 0){
-			if(keyboard_check(global.keybinds[5])){
-				vspeed -= 0.95
-				if(vspeed > 4)
-					vspeed -= 0.06
-			}
-		}
+	if(keyboard_check_pressed(global.keybinds[6])){
+		if(dashing == 0 and (global.playerArr[14][0] = 1) )
+			dashing = 50
 	}
 	
 	
@@ -107,7 +137,12 @@ if(global.keybinds[9]){	// 0 w, 1 a, 2 s, 3 d
 	
 }
 
-
+if(place_meeting(x, y - 32, Water_obj) and (global.playerArr[14][3] = 1)){
+	vspeed -= 1
+	if(place_meeting(x, y - 64, Water_obj) and (global.playerArr[14][3] = 1)){
+		vspeed -=0.7
+	}
+}
 
 event_inherited()
 

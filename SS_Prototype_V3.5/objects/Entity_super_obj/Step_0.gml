@@ -44,7 +44,7 @@ if(place_meeting(x + hspeed, y + vspeed, Solid_super_obj)){
 
 if(place_meeting(x, y + 4, Solid_super_obj)){
 	grounded = true
-	if(abs(vspeed) < 1){
+	if(abs(vspeed) < 1 and !place_meeting(x, y, Water_obj)){
 		vspeed = 0
 	}
 }else{
