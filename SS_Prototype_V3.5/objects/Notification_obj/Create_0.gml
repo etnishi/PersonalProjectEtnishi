@@ -7,6 +7,10 @@ curFocus = ""
 
 curLine = 0
 
+saved_shot = ""
+
+pauseWhile = true
+
 function toIndex(str, ind){
 	var out = ""
 	for(var i = 1; i <= ind; i ++){

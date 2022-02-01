@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "Sprite8",
-    "path": "sprites/Sprite8/Sprite8.yy",
+    "name": "Upgrade_test_spr",
+    "path": "sprites/Upgrade_test_spr/Upgrade_test_spr.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "Upgrade_super_obj",
-    "path": "objects/Upgrade_super_obj/Upgrade_super_obj.yy",
+    "name": "Entity_super_obj",
+    "path": "objects/Entity_super_obj/Entity_super_obj.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -23,7 +23,10 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -31,7 +34,7 @@
     "path": "folders/Objects/Entity_objs/upgradeStuff.yy",
   },
   "resourceVersion": "1.0",
-  "name": "test_up_obj",
+  "name": "Upgrade_test_obj",
   "tags": [],
   "resourceType": "GMObject",
 }

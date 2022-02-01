@@ -31,7 +31,7 @@
     "path": "folders/Objects/Entity_objs/upgradeStuff.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Upgrade_super_obj",
+  "name": "Upgrade_base_obj",
   "tags": [],
   "resourceType": "GMObject",
 }
