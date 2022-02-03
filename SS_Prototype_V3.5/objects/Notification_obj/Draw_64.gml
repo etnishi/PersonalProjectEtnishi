@@ -10,15 +10,12 @@ draw_set_halign(fa_center)
 if(curFocus != ""){
 	if(pauseWhile){
 		if(saved_shot == ""){
-			instance_deactivate_all(true)
 			saved_shot = sprite_create_from_surface(application_surface, 0, 0, camera_get_view_width(view_camera[0]), camera_get_view_height(view_camera[0]), false, false, 0, 0)
-			
+			instance_deactivate_all(true)		
 		}
 		if(saved_shot != ""){
 			draw_sprite(saved_shot, 0, 0, 0)
 		}
-	}else{
-		instance_activate_all()
 	}
 	line = toIndex(curFocus, curLine)
 	draw_sprite_ext(Notification_box_spr, 0, xoff, yoff, tscale, tscale, 0, c_white, 1)
@@ -30,7 +27,6 @@ if(curFocus != ""){
 	if(saved_shot != ""){
 		sprite_delete(saved_shot)
 		saved_shot = ""
-		instance_activate_all()
 	}
 }
 
