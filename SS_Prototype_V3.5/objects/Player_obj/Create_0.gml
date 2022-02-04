@@ -3,7 +3,7 @@
 
 
 l_dir = false
-r_dir = false
+r_dir = true
 u_dir = false
 d_dir = false
 

@@ -9,7 +9,8 @@ if(global.keybinds[8]){	// ranged attacking aim / shoot
 	if(mouse_check_button_pressed(mb_left)){
 		// arr [ damage, speed, cooldown, cost, range, bonusScripts]
 		//lengthdir_x(32, direction + 45)
-		//create_Bullet( x + armXoff + lengthdir_x(90, aimAngle), y + 45 + lengthdir_y(90, aimAngle), aimAngle, [5, 30, 10, 10, 60, [Split_three]])
+		// arr [ damage, charge, cooldown, range, bonusScripts]
+		Create_Swing(x, y, r_dir, [10, 45, 60, 2, []])
 	}
 	if(mouse_check_button_pressed(mb_right)){
 		// arr [ damage, speed, cooldown, cost, range, bonusScripts]
@@ -49,6 +50,25 @@ if(global.keybinds[9]){	// 0 w, 1 a, 2 s, 3 d
 			
 			}
 			
+			if(uIn != dIn){
+				if(uIn){
+					u_dir = true
+					d_dir = false
+					if(place_meeting(x, y, Water_obj) and (global.playerArr[14][3] = 1)){
+						vspeed = -11
+					}
+				}else if(dIn){
+					u_dir = false
+					d_dir = true
+					if(place_meeting(x, y, Water_obj) and (global.playerArr[14][3] = 2)){
+						vspeed = 9
+					}
+				}
+			}else{
+				u_dir = false
+				d_dir = false
+			}
+		
 			if(grounded or (place_meeting(x, y, Water_obj) and (global.playerArr[14][3] = 2))){	// Abilities that require being grounded (can be used unrestricted in water if can swim level 2) 
 				if(keyboard_check_pressed(global.keybinds[5])){
 					jumpTimer = global.playerArr[9]
@@ -91,25 +111,6 @@ if(global.keybinds[9]){	// 0 w, 1 a, 2 s, 3 d
 					hspeed = -30
 				}
 			}
-		}
-		
-		if(uIn != dIn){
-			if(uIn){
-				u_dir = true
-				d_dir = false
-				if(place_meeting(x, y, Water_obj) and (global.playerArr[14][3] = 1)){
-					vspeed = -11
-				}
-			}else if(dIn){
-				u_dir = false
-				d_dir = true
-				if(place_meeting(x, y, Water_obj) and (global.playerArr[14][3] = 2)){
-					vspeed = 9
-				}
-			}
-		}else{
-			u_dir = false
-			d_dir = false
 		}
 		
 	}

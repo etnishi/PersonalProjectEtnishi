@@ -34,10 +34,10 @@ global.playerArr[6] = 20		// max energy
 global.playerArr[7] = 20		// cur energy
 global.playerArr[8] = 9			// top speed
 global.playerArr[9] = 8			// jump height	
-global.playerArr[10] = []		// gun			[ damage, speed, cooldown, cost, range, bonusScripts]
-global.playerArr[11] = []		// gun bonuses 
+global.playerArr[10] = []		// swing		[ damage, charge, cooldown, range, bonusScripts]
+global.playerArr[11] = []		// swing bonuses 
 								// bonusScript can add targeting or split the shot into three or increase damage
-global.playerArr[12] = []		// alt gun		same as gun but more costly and longer cooldown
+global.playerArr[12] = []		// alt gun		[ damage, speed, cooldown, cost, range, bonusScripts]
 global.playerArr[13] = []		// alt gun bonuses can include stronger bonuses 
 global.playerArr[14] = [1, 1, 1, 1]		// abilities active
 //	List[dash, verticalMotion, slowFall, swim, ]
