@@ -5,3 +5,6 @@ curInd = 0
 counter = 0
 last = []
 lastInd = []
+
+inSeq = ""
+revSeq = ""

@@ -6,6 +6,9 @@ function Main_Menu(){
 	arr[1] = CreateEle("New Game", )
 	arr[2] = CreateEle("Load Game", )
 	arr[3] = CreateEle("Options", Options_Menu)
+	
+	inSeq = layer_sequence_create("Front_Instances", 0, 0, opening_seq)
+	revSeq = rev_opening_seq
 	return arr
 }
 
