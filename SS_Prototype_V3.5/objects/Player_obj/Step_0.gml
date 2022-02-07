@@ -100,9 +100,9 @@ if(global.keybinds[9]){	// 0 w, 1 a, 2 s, 3 d
 		}else{
 			if(dashing > 40){
 				if(u_dir and (global.playerArr[14][1] = 1)){
-					vspeed = -31
+					vspeed = -21
 				}else if(d_dir and (global.playerArr[14][1] = 1)){
-					vspeed = 29
+					vspeed = 19
 				}else if(r_dir){
 					vspeed = -1
 					hspeed = 30

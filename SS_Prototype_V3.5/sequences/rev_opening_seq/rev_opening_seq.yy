@@ -9,7 +9,7 @@
   "length": 60.0,
   "events": {
     "Keyframes": [
-      {"id":"e2e350ff-04cc-40c5-9e9d-9cb934499f9d","Key":20.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
+      {"id":"44438566-0ba7-48ee-ad06-98ce605baeb1","Key":19.9999,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
               "done",
             ],"resourceVersion":"1.0","resourceType":"MessageEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MessageEventKeyframe>",},
     ],
