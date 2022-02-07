@@ -19,6 +19,10 @@ if(!canSwim){
 	}
 }
 
+var mWater = instance_place(x, y, Moving_Water_obj)
+if(mWater){
+	motion_add(mWater.image_angle, 3)
+}
 
 var tempH = abs(hspeed)
 var tempV = abs(vspeed)
@@ -31,6 +35,8 @@ if(doCollision){
 	for(var v = 0; v < abs(vspeed); v++){
 		if(place_meeting(x, y + ((1 + v) * sign(vspeed)), Solid_super_obj)){
 			tempV --
+		}else if((vspeed >= 0 and onLadder == "") and collision_line(x, y + height + ((1 + v) * sign(vspeed)), x + width, y + height + ((1 + v) * sign(vspeed)), OneWay_Floor_obj, false, true)){
+			tempV --
 		}
 	}
 }
@@ -42,7 +48,7 @@ if(place_meeting(x + hspeed, y + vspeed, Solid_super_obj)){
 	vspeed = 0
 }
 
-if(place_meeting(x, y + 4, Solid_super_obj)){
+if(place_meeting(x, y + 4, Solid_super_obj) or place_meeting(x, y + 4, OneWay_Floor_obj)){
 	grounded = true
 	if(abs(vspeed) < 1 and !place_meeting(x, y, Water_obj)){
 		vspeed = 0

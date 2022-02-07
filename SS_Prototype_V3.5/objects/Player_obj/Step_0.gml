@@ -145,9 +145,26 @@ if(place_meeting(x, y - 32, Water_obj) and (global.playerArr[14][3] = 1)){
 	}
 }
 
+var ladd = instance_place(x, y, Ladder_obj)
+if(ladd){
+	if(uIn or dIn){
+		onLadder = ladd
+		x = ladd.x
+	}
+	if(onLadder != ""){
+		vspeed = -1
+		grounded = true
+		if(uIn){
+			vspeed = -5
+		}else if(dIn){
+			vspeed = 5
+		}
+	}
+}else{
+	onLadder = ""
+}
+
 event_inherited()
-
-
 
 /*
 global.playerArr[0] = 123456	// ID

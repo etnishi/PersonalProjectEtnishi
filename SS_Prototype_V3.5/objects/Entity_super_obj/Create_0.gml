@@ -10,3 +10,7 @@ cooldownRate = 60
 canSwim = false
 grounded = false
 walled = false
+onLadder = ""
+
+width = sprite_width
+height = sprite_height

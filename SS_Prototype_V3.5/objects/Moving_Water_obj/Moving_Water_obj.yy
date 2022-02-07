@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Water_spr",
-    "path": "sprites/Water_spr/Water_spr.yy",
+    "name": "Moving_Water_spr",
+    "path": "sprites/Moving_Water_spr/Moving_Water_spr.yy",
   },
   "solid": false,
   "visible": true,
@@ -31,7 +31,7 @@
     "path": "folders/Objects/Solid_objs.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Water_obj",
+  "name": "Moving_Water_obj",
   "tags": [],
   "resourceType": "GMObject",
 }

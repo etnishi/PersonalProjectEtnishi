@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Water_spr",
-    "path": "sprites/Water_spr/Water_spr.yy",
+    "name": "Sprite24",
+    "path": "sprites/Sprite24/Sprite24.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,10 +20,7 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -31,7 +28,7 @@
     "path": "folders/Objects/Solid_objs.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Water_obj",
+  "name": "OneWay_Floor_obj",
   "tags": [],
   "resourceType": "GMObject",
 }
