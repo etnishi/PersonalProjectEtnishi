@@ -4,11 +4,11 @@
 if(!locked){
 	if(collision_circle(xstart + 32, ystart - 80, 160, Player_obj, false, true)){
 		if(y > (ystart - 160)){
-			y -= 8
+			y -= 14
 		}
 	}else{
 		if(y < (ystart)){
-			y += 8
+			y += 14
 		}
 	}
 }

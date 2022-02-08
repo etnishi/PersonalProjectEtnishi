@@ -6,7 +6,7 @@
     "path": "folders/Scripts/KeyScripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Create_Door_scr",
+  "name": "Create_locked_Door_scr",
   "tags": [],
   "resourceType": "GMScript",
 }
