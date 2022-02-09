@@ -1,10 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-Step = 0
+targRoom = TestRoom2
 
-charge = 0
+xTarg = 96
 
-dir = true
+yTarg = 1600
 
-event_inherited()

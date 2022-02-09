@@ -14,3 +14,6 @@ onLadder = ""
 
 width = sprite_width
 height = sprite_height
+
+curHealth = 10
+curAlive = true

@@ -62,3 +62,7 @@ if(place_meeting(x + 2, y, Solid_super_obj) or place_meeting(x - 2, y, Solid_sup
 }else{
 	walled = false
 }
+
+if(curHealth <= 0){
+	curAlive = false
+}

@@ -12,6 +12,7 @@ for(var i = 0; i < array_length(arr[5]); i++){
 
 if(Step == 0){
 	Step ++
+	damage = arr[0]
 	range = arr[4]
 	speed = arr[1]
 }else{

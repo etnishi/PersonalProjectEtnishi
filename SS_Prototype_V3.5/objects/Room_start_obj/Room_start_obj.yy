@@ -1,16 +1,10 @@
 {
-  "spriteId": {
-    "name": "Sprite5",
-    "path": "sprites/Sprite5/Sprite5.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "Entity_attack_super_obj",
-    "path": "objects/Entity_attack_super_obj/Entity_attack_super_obj.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -25,17 +19,15 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "bulletStuff",
-    "path": "folders/Objects/Entity_objs/bulletStuff.yy",
+    "name": "Setup_objs",
+    "path": "folders/Objects/Setup_objs.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Bullet_base_obj",
+  "name": "Room_start_obj",
   "tags": [],
   "resourceType": "GMObject",
 }

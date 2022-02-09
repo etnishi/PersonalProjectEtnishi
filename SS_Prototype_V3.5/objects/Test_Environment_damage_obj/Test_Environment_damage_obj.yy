@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "Enemy_super_obj",
-    "path": "objects/Enemy_super_obj/Enemy_super_obj.yy",
+    "name": "Entity_damage_env_super_obj",
+    "path": "objects/Entity_damage_env_super_obj/Entity_damage_env_super_obj.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -25,6 +25,7 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -33,7 +34,7 @@
     "path": "folders/Objects/Entity_objs.yy",
   },
   "resourceVersion": "1.0",
-  "name": "EnemyPlaceholder_Flying_obj",
+  "name": "Test_Environment_damage_obj",
   "tags": [],
   "resourceType": "GMObject",
 }

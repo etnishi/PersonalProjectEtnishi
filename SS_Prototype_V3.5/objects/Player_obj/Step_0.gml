@@ -1,5 +1,18 @@
-/// @description Player Step Event
-// You can write your code in this editor
+/// @description Player character Step Event
+/*
+this is the step event for the playable character.
+This contains input checking for keyboard and mouse for actions such as moving jumping swimming 
+dashing and attacking.
+it also checks for interactions with ladders
+
+*/
+
+curHealth = global.playerArr[5]
+
+if(keyboard_check_pressed(ord("P"))){
+	show_debug_message("Debug Break")
+	knockback = 30
+}
 
 if(battleStance > 0)
 	battleStance --
@@ -32,8 +45,8 @@ if(global.keybinds[9]){	// 0 w, 1 a, 2 s, 3 d
 	var uIn = keyboard_check(global.keybinds[0])
 	var dIn = keyboard_check(global.keybinds[2])
 	
-	if(knockback == 0){
-		
+	if(knockback <= 0){
+		vulnerable = true
 		if(dashing <= 40){
 			if(lIn != rIn){
 				if(lIn){
@@ -47,7 +60,6 @@ if(global.keybinds[9]){	// 0 w, 1 a, 2 s, 3 d
 				}
 			}else{
 				hspeed = 0
-			
 			}
 			
 			if(uIn != dIn){
@@ -75,7 +87,7 @@ if(global.keybinds[9]){	// 0 w, 1 a, 2 s, 3 d
 					vspeed = -20
 				}
 			}else{
-		
+				
 			}
 			
 			if(jumpTimer > 0){
@@ -113,6 +125,23 @@ if(global.keybinds[9]){	// 0 w, 1 a, 2 s, 3 d
 			}
 		}
 		
+	}else{
+		knockback --
+		vulnerable = false
+	}
+	
+	var dam = instance_place(x, y, Entity_attack_super_obj)
+	if(dam){
+		if(!dam.friendly){
+			if(place_meeting(x, y, Entity_damage_env_super_obj)){
+			
+			}else if(vulnerable){
+				curHealth -= dam.damage
+				knockback = dam.damage * 10
+				motion_add(dam.direction, dam.damage * 10)
+				motion_add(90, dam.damage * 10)
+			}
+		}
 	}
 	
 	if(keyboard_check_pressed(global.keybinds[6])){
@@ -165,6 +194,12 @@ if(ladd){
 }
 
 event_inherited()
+
+if(!curAlive){
+	
+}else{
+	global.playerArr[5] = curHealth
+}
 
 /*
 global.playerArr[0] = 123456	// ID

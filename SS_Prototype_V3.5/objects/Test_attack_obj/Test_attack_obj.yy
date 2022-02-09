@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite5",
-    "path": "sprites/Sprite5/Sprite5.yy",
+    "name": "Sprite6",
+    "path": "sprites/Sprite6/Sprite6.yy",
   },
   "solid": false,
   "visible": true,
@@ -25,17 +25,15 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "bulletStuff",
-    "path": "folders/Objects/Entity_objs/bulletStuff.yy",
+    "name": "Entity_objs",
+    "path": "folders/Objects/Entity_objs.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Bullet_base_obj",
+  "name": "Test_attack_obj",
   "tags": [],
   "resourceType": "GMObject",
 }
