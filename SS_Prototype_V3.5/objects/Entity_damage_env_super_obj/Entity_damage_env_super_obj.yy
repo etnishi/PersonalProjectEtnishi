@@ -20,12 +20,14 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Entity_objs",
-    "path": "folders/Objects/Entity_objs.yy",
+    "name": "Entity_supers",
+    "path": "folders/Objects/Entity_objs/Entity_supers.yy",
   },
   "resourceVersion": "1.0",
   "name": "Entity_damage_env_super_obj",

@@ -9,6 +9,10 @@ d_dir = false
 
 f_dir = 0
 
+xRecall = xstart
+
+yRecall = ystart
+
 knockback = 0
 
 battleStance = 0

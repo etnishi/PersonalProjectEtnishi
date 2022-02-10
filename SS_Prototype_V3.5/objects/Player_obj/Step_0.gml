@@ -46,7 +46,6 @@ if(global.keybinds[9]){	// 0 w, 1 a, 2 s, 3 d
 	var dIn = keyboard_check(global.keybinds[2])
 	
 	if(knockback <= 0){
-		vulnerable = true
 		if(dashing <= 40){
 			if(lIn != rIn){
 				if(lIn){
@@ -127,17 +126,20 @@ if(global.keybinds[9]){	// 0 w, 1 a, 2 s, 3 d
 		
 	}else{
 		knockback --
-		vulnerable = false
 	}
 	
 	var dam = instance_place(x, y, Entity_attack_super_obj)
 	if(dam){
 		if(!dam.friendly){
 			if(place_meeting(x, y, Entity_damage_env_super_obj)){
-			
+				curHealth -= 20
+				x = xRecall
+				y = yRecall
+				speed = 0
 			}else if(vulnerable){
 				curHealth -= dam.damage
 				knockback = dam.damage * 10
+				damageCooldown = dam.damage * 50
 				motion_add(dam.direction, dam.damage * 10)
 				motion_add(90, dam.damage * 10)
 			}
@@ -191,6 +193,12 @@ if(ladd){
 	}
 }else{
 	onLadder = ""
+}
+
+var rec = instance_place(x, y, Recall_point_obj)
+if( rec ){
+	xRecall = rec.x
+	yRecall = rec.y
 }
 
 event_inherited()

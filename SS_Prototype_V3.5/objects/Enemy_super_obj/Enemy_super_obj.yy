@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Entity_objs",
-    "path": "folders/Objects/Entity_objs.yy",
+    "name": "Entity_supers",
+    "path": "folders/Objects/Entity_objs/Entity_supers.yy",
   },
   "resourceVersion": "1.0",
   "name": "Enemy_super_obj",

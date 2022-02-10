@@ -3,8 +3,6 @@
 
 global.dirLocation = ""	// working_directory
 
-global.playerSpawn = [0, 0]
-
 global.config = []
 global.config[0] = 1366		// x size
 global.config[1] = 768		// y size
@@ -50,11 +48,8 @@ global.playerArr[15] = [0, 0, 0, 0, 0]		// abilities passive / reactive
 		only one resistance can be active at once
 		activates if none are active and damage taken applies to it
 		ex. neutral > takes fire damage > hotRes activates > chillRes can't activate until hot wares off
+		
 */
-global.playerArr[16] = [] // general progression flags
-//	used for progression flags such as unlocked doors, found upgrades, and other misc things like story stuff
-
-
 show_debug_message("Directory is: " + working_directory)
 
 if(!loadConf())

@@ -1,10 +1,16 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "Enfironmental_damage_spr",
+    "path": "sprites/Enfironmental_damage_spr/Enfironmental_damage_spr.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "Entity_damage_env_super_obj",
+    "path": "objects/Entity_damage_env_super_obj/Entity_damage_env_super_obj.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -17,18 +23,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Entity_supers",
-    "path": "folders/Objects/Entity_objs/Entity_supers.yy",
+    "name": "Entity_objs",
+    "path": "folders/Objects/Entity_objs.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Entity_super_obj",
+  "name": "Environment_damage_obj",
   "tags": [],
   "resourceType": "GMObject",
 }
