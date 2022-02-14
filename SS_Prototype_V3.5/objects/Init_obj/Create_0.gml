@@ -33,7 +33,7 @@ global.playerArr[5] = 100		// cur health
 global.playerArr[6] = 20		// max energy
 global.playerArr[7] = 20		// cur energy
 global.playerArr[8] = 9			// top speed
-global.playerArr[9] = 8			// jump height	
+global.playerArr[9] = 4			// jump height	
 global.playerArr[10] = []		// swing		[ damage, charge, cooldown, range, bonusScripts]
 global.playerArr[11] = []		// swing bonuses 
 								// bonusScript can add targeting or split the shot into three or increase damage
@@ -50,6 +50,8 @@ global.playerArr[15] = [0, 0, 0, 0, 0]		// abilities passive / reactive
 		ex. neutral > takes fire damage > hotRes activates > chillRes can't activate until hot wares off
 		
 */
+
+global.playerSpawn = [64, 64, Fade_in_seq]
 show_debug_message("Directory is: " + working_directory)
 
 if(!loadConf())

@@ -1,10 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-targRoom = TestRoom2
+saved_shot = ""
 
-xTarg = 96
+Tscript = ""
 
-yTarg = 1600
+seq = ""
 
-seqTransition = Fade_in_seq
+inSeq = true

@@ -11,6 +11,11 @@ canSwim = false
 grounded = false
 walled = false
 onLadder = ""
+side = false
+knockback = 0
+
+xRecall = xstart
+yRecall = ystart
 
 width = sprite_width
 height = sprite_height

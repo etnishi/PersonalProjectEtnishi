@@ -7,11 +7,14 @@ it also checks for interactions with ladders
 
 */
 
-curHealth = global.playerArr[5]
 
 if(keyboard_check_pressed(ord("P"))){
 	show_debug_message("Debug Break")
 	knockback = 30
+}
+if(keyboard_check_pressed(ord("L"))){
+	show_debug_message("Debug Reset")
+	room_restart()
 }
 
 if(battleStance > 0)
@@ -128,24 +131,6 @@ if(global.keybinds[9]){	// 0 w, 1 a, 2 s, 3 d
 		knockback --
 	}
 	
-	var dam = instance_place(x, y, Entity_attack_super_obj)
-	if(dam){
-		if(!dam.friendly){
-			if(place_meeting(x, y, Entity_damage_env_super_obj)){
-				curHealth -= 20
-				x = xRecall
-				y = yRecall
-				speed = 0
-			}else if(vulnerable){
-				curHealth -= dam.damage
-				knockback = dam.damage * 10
-				damageCooldown = dam.damage * 50
-				motion_add(dam.direction, dam.damage * 10)
-				motion_add(90, dam.damage * 10)
-			}
-		}
-	}
-	
 	if(keyboard_check_pressed(global.keybinds[6])){
 		if(dashing == 0 and (global.playerArr[14][0] = 1) )
 			dashing = 50
@@ -197,25 +182,27 @@ if(ladd){
 
 var rec = instance_place(x, y, Recall_point_obj)
 if( rec ){
-	xRecall = rec.x
-	yRecall = rec.y
+	xRecall = rec.x - (sprite_width / 2)
+	yRecall = rec.y - sprite_height
 }
 
 event_inherited()
 
 if(!curAlive){
 	
-}else{
-	global.playerArr[5] = curHealth
 }
 
+global.playerArr[5] = curHealth
+
 /*
-global.playerArr[0] = 123456	// ID
-global.playerArr[1] = "Name"	// name
-global.playerArr[2] = 100		// max health
-global.playerArr[3] = 100		// cur health
-global.playerArr[4] = 20		// max energy
-global.playerArr[5] = 20		// cur energy
-global.playerArr[6] = 10		// top speed
-global.playerArr[7] = 10		// jump height
+global.playerArr[0] = random_range(10000, 99999)	// ID
+global.playerArr[1] = TestRoom	// curRoom
+global.playerArr[2] = 100		// xpos
+global.playerArr[3] = 100		// ypos
+global.playerArr[4] = 100		// max health
+global.playerArr[5] = 100		// cur health
+global.playerArr[6] = 20		// max energy
+global.playerArr[7] = 20		// cur energy
+global.playerArr[8] = 9			// top speed
+global.playerArr[9] = 8			// jump height	
 */

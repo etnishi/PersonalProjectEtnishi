@@ -66,3 +66,22 @@ if(place_meeting(x + 2, y, Solid_super_obj) or place_meeting(x - 2, y, Solid_sup
 if(curHealth <= 0){
 	curAlive = false
 }
+
+var dam = instance_place(x, y, Entity_attack_super_obj)
+if(dam){
+	if(dam.friendly != side){
+		if(vulnerable){
+			curHealth -= dam.damage
+			knockback = dam.damage * 10
+			damageCooldown = dam.damage * 50
+			motion_add(dam.direction, dam.damage * 10)
+			motion_add(90, dam.damage * 10)
+		}
+	}
+	if(place_meeting(x, y, Entity_damage_env_super_obj)){
+		curHealth -= 20
+		x = xRecall
+		y = yRecall
+		speed = 0
+	}
+}

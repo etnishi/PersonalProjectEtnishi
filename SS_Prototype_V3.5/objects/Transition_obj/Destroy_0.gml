@@ -1,10 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-targRoom = TestRoom2
-
-xTarg = 96
-
-yTarg = 1600
-
-seqTransition = Fade_in_seq
+if(saved_shot != ""){
+	sprite_delete(saved_shot)
+}

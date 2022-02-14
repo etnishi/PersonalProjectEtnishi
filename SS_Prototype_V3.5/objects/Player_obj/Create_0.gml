@@ -9,11 +9,7 @@ d_dir = false
 
 f_dir = 0
 
-xRecall = xstart
-
-yRecall = ystart
-
-knockback = 0
+drawGUI = true
 
 battleStance = 0
 
@@ -26,3 +22,7 @@ jumpTimer = 0
 aimAngle = 0
 
 event_inherited()
+
+side = true
+
+curHealth = global.playerArr[5]
