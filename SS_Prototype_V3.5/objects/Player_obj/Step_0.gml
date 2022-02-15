@@ -186,7 +186,14 @@ if( rec ){
 	yRecall = rec.y - sprite_height
 }
 
-event_inherited()
+var baddie = instance_place(x,y,Enemy_super_obj)
+if(baddie){
+	motion_set(point_direction(baddie.x + baddie.centerX,0, x + sprite_width/2, 0), 10)
+	motion_add(90 , 5)
+	knockback = 10
+}
+
+event_inherited() // solid object collision
 
 if(!curAlive){
 	
