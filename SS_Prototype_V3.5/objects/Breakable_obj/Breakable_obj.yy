@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "Player_spr",
-    "path": "sprites/Player_spr/Player_spr.yy",
+    "name": "Sprite36",
+    "path": "sprites/Sprite36/Sprite36.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "Entity_super_obj",
-    "path": "objects/Entity_super_obj/Entity_super_obj.yy",
+    "name": "Solid_super_obj",
+    "path": "objects/Solid_super_obj/Solid_super_obj.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -24,19 +24,17 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":1,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "PlayerStuff",
-    "path": "folders/Objects/Entity_objs/PlayerStuff.yy",
+    "name": "Solid_objs",
+    "path": "folders/Objects/Solid_objs.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Player_obj",
+  "name": "Breakable_obj",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Player_spr",
-    "path": "sprites/Player_spr/Player_spr.yy",
+    "name": "Circle_spr",
+    "path": "sprites/Circle_spr/Circle_spr.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,15 +20,18 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "PlayerStuff",
-    "path": "folders/Objects/Entity_objs/PlayerStuff.yy",
+    "name": "swingStuff",
+    "path": "folders/Objects/Entity_objs/swingStuff.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Player_marker_obj",
+  "name": "Parry_obj",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -9,7 +9,7 @@ if(damageCooldown > 0){
 }
 
 if(vspeed < 20 && doGrav){
-	vspeed += 1
+	motion_add(global.grav[0], global.grav[1])
 }
 
 if(!canSwim){

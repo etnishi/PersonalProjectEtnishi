@@ -7,6 +7,10 @@ r_dir = true
 u_dir = false
 d_dir = false
 
+shotCharge = 0
+
+blockCharge = 0
+
 f_dir = 0
 
 drawGUI = true

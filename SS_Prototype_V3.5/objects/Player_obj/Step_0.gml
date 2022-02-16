@@ -20,23 +20,52 @@ if(keyboard_check_pressed(ord("L"))){
 if(battleStance > 0)
 	battleStance --
 
-if(global.keybinds[8]){	// ranged attacking aim / shoot
+if(global.keybinds[8]){	// ranged attacking aim / shoot / parry / block
 	aimAngle = point_direction( x + armXoff, y - 16, mouse_x, mouse_y)
-	if(mouse_check_button_pressed(mb_left)){
+	if(mouse_check_button_pressed(global.keybinds[10])){
 		// arr [ damage, speed, cooldown, cost, range, bonusScripts]
-		//lengthdir_x(32, direction + 45)
+		// lengthdir_x(32, direction + 45)
 		// arr [ damage, charge, cooldown, range, bonusScripts]
 		Create_Swing(x, y, r_dir, [10, 45, 60, 2, []])
 	}
-	if(mouse_check_button_pressed(mb_right)){
+	if(mouse_check_button_pressed(global.keybinds[11])){
 		// arr [ damage, speed, cooldown, cost, range, bonusScripts]
 		battleStance = 120
 		create_Bullet( x + armXoff + lengthdir_x(80, aimAngle), y - 16 + lengthdir_y(80, aimAngle), aimAngle, [15, 10, 20, 50, 512, [Light_Tracking, Speed_up]])
 		
 	}
+	if(mouse_check_button(global.keybinds[11])){
+		shotCharge ++
+		battleStance = 120
+	}
+	if(mouse_check_button_released(global.keybinds[11])){
+		if(shotCharge > 60){
+			battleStance = 120
+		}
+		shotCharge = 0
+	}
+	
+	if(mouse_check_button(global.keybinds[12])){
+		if(blockCharge < 90){
+			blockCharge ++
+		}
+		if(blockCharge == 1){
+			
+		}
+	}
+	if(mouse_check_button_released(global.keybinds[12])){
+		if(blockCharge > 30){
+			
+		}
+		blockCharge = round(blockCharge / 2)
+	}
 }else{
 	// controller aiming input
 }
+if(blockCharge > 0){	// blocking cooldown
+	blockCharge --
+}
+
 if(dashing > 0){
 	dashing --
 }

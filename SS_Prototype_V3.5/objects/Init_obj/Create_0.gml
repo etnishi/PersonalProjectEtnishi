@@ -22,12 +22,15 @@ global.keybinds[6] = vk_lshift
 global.keybinds[7] = vk_escape
 global.keybinds[8] = true		// mouse and keyboard t or controller ariming  f
 global.keybinds[9] = true		// mouse and keyboard t or controller movement f
+global.keybinds[10] = mb_left	
+global.keybinds[11] = mb_right	
+global.keybinds[12] = mb_middle
 
 global.playerArr = []
 global.playerArr[0] = random_range(10000, 99999)	// ID
-global.playerArr[1] = TestRoom	// curRoom
+global.playerArr[1] = Cave_start_0	// curRoom
 global.playerArr[2] = 64		// xpos
-global.playerArr[3] = 64		// ypos
+global.playerArr[3] = 0			// ypos
 global.playerArr[4] = 100		// max health
 global.playerArr[5] = 100		// cur health
 global.playerArr[6] = 20		// max energy
@@ -48,17 +51,18 @@ global.playerArr[15] = [0, 0, 0, 0, 0]		// abilities passive / reactive
 		only one resistance can be active at once
 		activates if none are active and damage taken applies to it
 		ex. neutral > takes fire damage > hotRes activates > chillRes can't activate until hot wares off
-		
 */
+
+global.grav = [270, 1]
 
 global.playerSpawn = [0, 0, ""]
 show_debug_message("Directory is: " + working_directory)
-
+/*
 if(!loadConf())
 	saveConf()
 
 if(!loadKeys())
 	saveKeys()
-
+*/
 window_set_fullscreen(global.config[2])
 room_goto(MenuRoom)
