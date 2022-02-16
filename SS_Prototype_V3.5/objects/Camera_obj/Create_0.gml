@@ -6,3 +6,5 @@ focusTarg = 0
 targX = -1
 
 targY = -1
+
+doDark = 2

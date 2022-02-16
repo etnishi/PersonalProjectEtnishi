@@ -26,8 +26,8 @@ global.keybinds[9] = true		// mouse and keyboard t or controller movement f
 global.playerArr = []
 global.playerArr[0] = random_range(10000, 99999)	// ID
 global.playerArr[1] = TestRoom	// curRoom
-global.playerArr[2] = 100		// xpos
-global.playerArr[3] = 100		// ypos
+global.playerArr[2] = 64		// xpos
+global.playerArr[3] = 64		// ypos
 global.playerArr[4] = 100		// max health
 global.playerArr[5] = 100		// cur health
 global.playerArr[6] = 20		// max energy
@@ -51,7 +51,7 @@ global.playerArr[15] = [0, 0, 0, 0, 0]		// abilities passive / reactive
 		
 */
 
-global.playerSpawn = [64, 64, Fade_in_seq]
+global.playerSpawn = [0, 0, ""]
 show_debug_message("Directory is: " + working_directory)
 
 if(!loadConf())

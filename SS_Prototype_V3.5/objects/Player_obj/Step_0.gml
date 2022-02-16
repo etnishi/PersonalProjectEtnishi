@@ -187,10 +187,11 @@ if( rec ){
 }
 
 var baddie = instance_place(x,y,Enemy_super_obj)
-if(baddie){
+if(baddie and vulnerable){
 	motion_set(point_direction(baddie.x + baddie.centerX,0, x + sprite_width/2, 0), 10)
-	motion_add(90 , 5)
+	motion_add(90 , 10)
 	knockback = 10
+	damageCooldown = baddie.extDamage * 5
 }
 
 event_inherited() // solid object collision

@@ -8,7 +8,7 @@ function Charge_Basic(){
 		
 		if(!idle){
 			hspeed = extDamage * sign(hspeed)
-			if(place_meeting(x + (offset * 5), y, Player_obj) or place_meeting(x + (offset * 5), y, Solid_super_obj)){
+			if(place_meeting(x + (offset * 5), y, Solid_super_obj)){
 				actionCooldown = 0
 			}
 		}
