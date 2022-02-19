@@ -26,13 +26,16 @@ if(global.keybinds[8]){	// ranged attacking aim / shoot / parry / block
 		// arr [ damage, speed, cooldown, cost, range, bonusScripts]
 		// lengthdir_x(32, direction + 45)
 		// arr [ damage, charge, cooldown, range, bonusScripts]
-		Create_Swing(x, y, r_dir, global.playerArr[10])
+		if(global.playerArr[14][4] > 0){
+			Create_Swing(x, y, r_dir, global.playerArr[10])
+		}
 	}
 	if(mouse_check_button_pressed(global.keybinds[11])){
 		// arr [ damage, speed, cooldown, cost, range, bonusScripts]
-		battleStance = 120
-		create_Bullet( x + armXoff + lengthdir_x(80, aimAngle), y - 16 + lengthdir_y(80, aimAngle), aimAngle, global.playerArr[12])
-		
+		if(global.playerArr[14][5] > 0){
+			battleStance = 120
+			create_Bullet( x + armXoff + lengthdir_x(80, aimAngle), y - 16 + lengthdir_y(80, aimAngle), aimAngle, global.playerArr[12])
+		}
 	}
 	if(mouse_check_button(global.keybinds[11])){
 		shotCharge ++

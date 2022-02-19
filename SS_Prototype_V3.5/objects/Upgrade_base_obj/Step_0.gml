@@ -12,6 +12,7 @@ if(place_meeting(x, y, Player_obj)){
 			funct()
 		}
 	}
+	global.playerArr[16][0][ind] ++
 	
 	instance_destroy()
 	

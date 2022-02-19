@@ -42,7 +42,7 @@ global.playerArr[11] = []		// swing bonuses
 								// bonusScript can add targeting or split the shot into three or increase damage
 global.playerArr[12] = [15, 10, 20, 50, 512, [Light_Tracking, Speed_up]]	// alt gun		[ damage, speed, cooldown, cost, range, bonusScripts]
 global.playerArr[13] = []		// alt gun bonuses can include stronger bonuses 
-global.playerArr[14] = [0, 0, 0, 1]		// abilities active
+global.playerArr[14] = [0, 0, 0, 1, 0, 0]	// abilities active
 //	List[dash, verticalMotion, slowFall, swim, ]
 global.playerArr[15] = [0, 0, 0, 0, 0]		// abilities passive / reactive
 //	List[noDrag, hotRes, chillRes, dodgeJump, dodgeDash]
@@ -52,6 +52,8 @@ global.playerArr[15] = [0, 0, 0, 0, 0]		// abilities passive / reactive
 		activates if none are active and damage taken applies to it
 		ex. neutral > takes fire damage > hotRes activates > chillRes can't activate until hot wares off
 */
+global.playerArr[16] = [[0, 0, 0, 0, 0, 0, 0, 0, 0]]
+//		event flags	0 upgrade array, 1 health Up array
 
 global.grav = [270, 1]
 
@@ -63,6 +65,9 @@ if(!loadConf())
 
 if(!loadKeys())
 	saveKeys()
+	
+if(!loadPlayer())
+	savePlayer()
 */
 window_set_fullscreen(global.config[2])
 room_goto(MenuRoom)
