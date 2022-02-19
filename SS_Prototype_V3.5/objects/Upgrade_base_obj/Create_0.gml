@@ -7,4 +7,6 @@ funct = ""
 
 arg = ""
 
+insSprite = ""
+
 event_inherited()

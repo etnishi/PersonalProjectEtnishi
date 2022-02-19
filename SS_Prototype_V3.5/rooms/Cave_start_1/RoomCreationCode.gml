@@ -6,3 +6,5 @@ The creation scripts for objects like locked doors and room transitions will liv
 
 objects such as upgrades and keys will also be marked in the 
 */
+
+Create_Room_Portal(-128, 2208, 1376, 224, Cave_start_0)

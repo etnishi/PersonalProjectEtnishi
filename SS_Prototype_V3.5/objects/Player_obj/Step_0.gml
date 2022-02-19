@@ -26,12 +26,12 @@ if(global.keybinds[8]){	// ranged attacking aim / shoot / parry / block
 		// arr [ damage, speed, cooldown, cost, range, bonusScripts]
 		// lengthdir_x(32, direction + 45)
 		// arr [ damage, charge, cooldown, range, bonusScripts]
-		Create_Swing(x, y, r_dir, [10, 45, 60, 2, []])
+		Create_Swing(x, y, r_dir, global.playerArr[10])
 	}
 	if(mouse_check_button_pressed(global.keybinds[11])){
 		// arr [ damage, speed, cooldown, cost, range, bonusScripts]
 		battleStance = 120
-		create_Bullet( x + armXoff + lengthdir_x(80, aimAngle), y - 16 + lengthdir_y(80, aimAngle), aimAngle, [15, 10, 20, 50, 512, [Light_Tracking, Speed_up]])
+		create_Bullet( x + armXoff + lengthdir_x(80, aimAngle), y - 16 + lengthdir_y(80, aimAngle), aimAngle, global.playerArr[12])
 		
 	}
 	if(mouse_check_button(global.keybinds[11])){
@@ -40,7 +40,8 @@ if(global.keybinds[8]){	// ranged attacking aim / shoot / parry / block
 	}
 	if(mouse_check_button_released(global.keybinds[11])){
 		if(shotCharge > 60){
-			battleStance = 120
+			create_Bullet( x + armXoff + lengthdir_x(80, aimAngle), y - 16 + lengthdir_y(80, aimAngle), aimAngle, global.playerArr[12])
+			// temp placeholder for charge shot script
 		}
 		shotCharge = 0
 	}
@@ -55,7 +56,8 @@ if(global.keybinds[8]){	// ranged attacking aim / shoot / parry / block
 	}
 	if(mouse_check_button_released(global.keybinds[12])){
 		if(blockCharge > 30){
-			
+			Create_Swing(x, y, r_dir, global.playerArr[10])
+			// temp placeholder for block/parry script
 		}
 		blockCharge = round(blockCharge / 2)
 	}
@@ -77,6 +79,8 @@ if(global.keybinds[9]){	// 0 w, 1 a, 2 s, 3 d
 	var uIn = keyboard_check(global.keybinds[0])
 	var dIn = keyboard_check(global.keybinds[2])
 	
+	var spIn = keyboard_check(global.keybinds[5])
+	
 	if(knockback <= 0){
 		if(dashing <= 40){
 			if(lIn != rIn){
@@ -93,8 +97,8 @@ if(global.keybinds[9]){	// 0 w, 1 a, 2 s, 3 d
 				hspeed = 0
 			}
 			
-			if(uIn != dIn){
-				if(uIn){
+			if(uIn != dIn or spIn){
+				if(uIn or spIn){
 					u_dir = true
 					d_dir = false
 					if(place_meeting(x, y, Water_obj) and (global.playerArr[14][3] = 1)){
@@ -185,7 +189,7 @@ if(global.keybinds[9]){	// 0 w, 1 a, 2 s, 3 d
 
 if(place_meeting(x, y - 32, Water_obj) and (global.playerArr[14][3] = 1)){
 	vspeed -= 1
-	if(place_meeting(x, y - 64, Water_obj) and (global.playerArr[14][3] = 1)){
+	if(place_meeting(x, y - 86, Water_obj) and (global.playerArr[14][3] = 1)){
 		vspeed -=0.7
 	}
 }

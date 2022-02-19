@@ -88,8 +88,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Rooms",
-    "path": "folders/Rooms.yy",
+    "name": "TestingRooms",
+    "path": "folders/Rooms/TestingRooms.yy",
   },
   "resourceVersion": "1.0",
   "name": "TestRoom",

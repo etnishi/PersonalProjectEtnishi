@@ -6,4 +6,4 @@ The creation scripts for objects like locked doors and room transitions will liv
 objects such as upgrades and keys will also be marked in the global variables
 */
 
-Create_Room_Portal(1376, 224, 64, 64, Cave_start_1)
+Create_Room_Portal(1440, 224, -64, 2208, Cave_start_1)
