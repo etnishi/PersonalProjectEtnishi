@@ -8,8 +8,8 @@ global.config[0] = 1366		// x size
 global.config[1] = 768		// y size
 global.config[2] = false	// fullscreen
 global.config[3] = 100		// Main Volume
+global.config[4] = 1		// Last Save used. Index out of 3 with 0 being reserved for temp / auto
 
-global.saveSlot = 0			// out of 3 with 0 being reserved for temp / auto
 
 global.keybinds = []
 global.keybinds[0] = ord("W")
@@ -38,10 +38,10 @@ global.playerArr[7] = 20		// cur energy
 global.playerArr[8] = 9			// top speed
 global.playerArr[9] = 4			// jump height	
 global.playerArr[10] = [10, 45, 60, 2, []]		// swing		[ damage, charge, cooldown, range, bonusScripts]
-global.playerArr[11] = []		// swing bonuses 
+global.playerArr[11] = ""		// block / parry scripts 
 								// bonusScript can add targeting or split the shot into three or increase damage
 global.playerArr[12] = [15, 10, 20, 50, 512, [Light_Tracking, Speed_up]]	// alt gun		[ damage, speed, cooldown, cost, range, bonusScripts]
-global.playerArr[13] = []		// alt gun bonuses can include stronger bonuses 
+global.playerArr[13] = ""		// alt gunscript. This can be anything. Haven't thought up yet
 global.playerArr[14] = [0, 0, 0, 1, 0, 0]	// abilities active
 //	List[dash, verticalMotion, slowFall, swim, ]
 global.playerArr[15] = [0, 0, 0, 0, 0]		// abilities passive / reactive
@@ -59,15 +59,14 @@ global.grav = [270, 1]
 
 global.playerSpawn = [0, 0, ""]
 show_debug_message("Directory is: " + working_directory)
-/*
+
 if(!loadConf())
 	saveConf()
 
 if(!loadKeys())
 	saveKeys()
-	
-if(!loadPlayer())
-	savePlayer()
-*/
+
+loadPlayer(global.config[4])
+
 window_set_fullscreen(global.config[2])
 room_goto(MenuRoom)

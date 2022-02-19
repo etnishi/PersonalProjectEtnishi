@@ -3,8 +3,8 @@
 function Main_Menu(){
 	var arr = []
 	arr[0] = CreateEle("Continue", Start_Game)
-	arr[1] = CreateEle("New Game", )
-	arr[2] = CreateEle("Load Game", )
+	arr[1] = CreateEle("New Game", New_Game)
+	arr[2] = CreateEle("Load Game", Load_Game_Menu)
 	arr[3] = CreateEle("Options", Options_Menu)
 	
 	inSeq = layer_sequence_create("Front_Instances", 0, 0, opening_seq)

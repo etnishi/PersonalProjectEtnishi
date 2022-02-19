@@ -38,31 +38,36 @@ if(global.keybinds[8]){	// ranged attacking aim / shoot / parry / block
 		}
 	}
 	if(mouse_check_button(global.keybinds[11])){
-		shotCharge ++
-		battleStance = 120
+		if(global.playerArr[13] != ""){
+			shotCharge ++
+			battleStance = 120
+			global.playerArr[13]()
+		}
 	}
 	if(mouse_check_button_released(global.keybinds[11])){
 		if(shotCharge > 60){
-			create_Bullet( x + armXoff + lengthdir_x(80, aimAngle), y - 16 + lengthdir_y(80, aimAngle), aimAngle, global.playerArr[12])
 			// temp placeholder for charge shot script
+			shotCharge = 0
+			if(global.playerArr[13 != ""]){
+				global.playerArr[13]()
+			}
 		}
 		shotCharge = 0
 	}
 	
-	if(mouse_check_button(global.keybinds[12])){
-		if(blockCharge < 90){
-			blockCharge ++
-		}
-		if(blockCharge == 1){
-			
+	if(mouse_check_button(global.keybinds[12])){ //global.playerArr[11]
+		if(global.playerArr[11] != ""){
+			if(blockCharge < 90){
+				blockCharge ++
+			}
+			if(blockCharge == 1){
+				
+			}
 		}
 	}
 	if(mouse_check_button_released(global.keybinds[12])){
-		if(blockCharge > 30){
-			Create_Swing(x, y, r_dir, global.playerArr[10])
-			// temp placeholder for block/parry script
-		}
-		blockCharge = round(blockCharge / 2)
+		if(blockCharge > 0)
+			blockCharge = round(blockCharge / 2)
 	}
 }else{
 	// controller aiming input

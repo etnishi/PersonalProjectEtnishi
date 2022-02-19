@@ -18,4 +18,8 @@ if(inSeq == ""){
 				draw_text_transformed(xoff, yoff + (off / 3) + (i * off), arr[i][2](), tscale, tscale, 0)
 		}
 	}
+	if(array_length(last) > 0){
+		draw_sprite_ext(Cone_spr, 0, xoff - 600, yoff - 250, 0.2, 0.2, 0, c_white, 1) // todo add back button marker
+		draw_text(xoff - 553, yoff - 248, "<Esc>")
+	}
 }

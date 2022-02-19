@@ -34,16 +34,22 @@ function loadKeys(){
 		return false	
 }
 
-function savePlayer(){
+function savePlayer(slot){
+	var typ = "\pl_"
+	if(slot == 0)
+		typ = "\Auto_"
 	var out = json_stringify(global.playerArr)
-	var file = file_text_open_write(global.dirLocation + "\saves\pl_" + string(global.playerArr[0]) + string(global.saveSlot));
+	var file = file_text_open_write(global.dirLocation + "\saves" + typ + "Player_Save_" + string(slot));
 	file_text_write_string(file, out);
 	file_text_close(file);
 }
 
-function loadPlayer(){
-	if(file_exists(global.dirLocation + "\saves\pl_" + string(global.playerArr[0]) + string(global.saveSlot))){
-		var file = file_text_open_read(global.dirLocation + "\saves\pl_" + string(global.playerArr[0]) + string(global.saveSlot));
+function loadPlayer(slot){
+	var typ = "\pl_"
+	if(slot == 0)
+		typ = "\Auto_"
+	if(file_exists(global.dirLocation + "\saves" + typ + "Player_Save_" + string(slot))){
+		var file = file_text_open_read(global.dirLocation + "\saves" + typ + "Player_Save_" + string(slot));
 		global.playerArr = json_parse(file_text_read_string(file))
 		file_text_close(file);
 		return true
