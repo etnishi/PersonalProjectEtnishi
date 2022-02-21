@@ -7,7 +7,8 @@ range --
 image_angle = direction
 
 for(var i = 0; i < array_length(arr[5]); i++){
-	arr[5][i]()
+	if(arr[5][i] != "")
+		arr[5][i]()
 }
 
 if(Step == 0){

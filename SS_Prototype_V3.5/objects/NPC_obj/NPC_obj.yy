@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "Enfironmental_damage_spr",
-    "path": "sprites/Enfironmental_damage_spr/Enfironmental_damage_spr.yy",
+    "name": "NPC_spr",
+    "path": "sprites/NPC_spr/NPC_spr.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "Entity_damage_env_super_obj",
-    "path": "objects/Entity_damage_env_super_obj/Entity_damage_env_super_obj.yy",
+    "name": "Entity_super_obj",
+    "path": "objects/Entity_super_obj/Entity_super_obj.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -25,15 +25,17 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Entity_objs",
-    "path": "folders/Objects/Entity_objs.yy",
+    "name": "FriendlyNPCStuff",
+    "path": "folders/Objects/Entity_objs/FriendlyNPCStuff.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Environment_damage_obj",
+  "name": "NPC_obj",
   "tags": [],
   "resourceType": "GMObject",
 }

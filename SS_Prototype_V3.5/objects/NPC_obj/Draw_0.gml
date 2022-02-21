@@ -1,8 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-
 draw_self()
 
-if(canSave and (saveCooldown == 0)){
-	draw_sprite(Next_icon_spr, 0, x + 16, Player_obj.y - 64)
+if( (inDialog == "") and playerRange){
+	draw_sprite(dialogPrompt_spr, (Frame / 12), x, y - 32)
 }

@@ -1,6 +1,12 @@
 /// @description Gravity and Collision
 // You can write your code in this editor
 
+if(Frame < 60){
+	Frame ++
+}else{
+	Frame = 0
+}
+
 if(damageCooldown > 0){
 	vulnerable = false
 	damageCooldown --

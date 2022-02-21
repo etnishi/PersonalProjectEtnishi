@@ -48,7 +48,7 @@ if(global.keybinds[8]){	// ranged attacking aim / shoot / parry / block
 		if(shotCharge > 60){
 			// temp placeholder for charge shot script
 			shotCharge = 0
-			if(global.playerArr[13 != ""]){
+			if(global.playerArr[13] != ""){
 				global.playerArr[13]()
 			}
 		}

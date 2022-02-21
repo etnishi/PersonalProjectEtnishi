@@ -14,6 +14,8 @@ onLadder = ""
 side = false
 knockback = 0
 
+Frame = 0
+
 xRecall = xstart
 yRecall = ystart
 
