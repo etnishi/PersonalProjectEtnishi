@@ -2,9 +2,9 @@
 // You can write your code in this editor
 
 if(place_meeting(x, y, Player_obj)){
-	
-	array_push(Notification_obj.messages, desc)
-	
+	if(desc != ""){
+		array_push(Notification_obj.messages, desc)
+	}
 	if(funct != ""){
 		if(arg != ""){
 			funct(arg)
@@ -12,7 +12,7 @@ if(place_meeting(x, y, Player_obj)){
 			funct()
 		}
 	}
-	global.playerArr[16][0][ind] ++
+	global.playerArr[16][arrInd][ind] ++
 	
 	instance_destroy()
 	

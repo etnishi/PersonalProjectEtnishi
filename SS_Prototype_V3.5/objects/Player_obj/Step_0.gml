@@ -109,13 +109,13 @@ if(global.keybinds[9]){	// 0 w, 1 a, 2 s, 3 d
 				if(uIn or spIn){
 					u_dir = true
 					d_dir = false
-					if(place_meeting(x, y, Water_obj) and (global.playerArr[14][3] = 1)){
+					if(place_meeting(x, y, Water_obj) and (global.playerArr[14][3] >= 1)){
 						vspeed = -11
 					}
 				}else if(dIn){
 					u_dir = false
 					d_dir = true
-					if(place_meeting(x, y, Water_obj) and (global.playerArr[14][3] = 2)){
+					if(place_meeting(x, y, Water_obj) and (global.playerArr[14][3] >= 2)){
 						vspeed = 9
 					}
 				}
@@ -195,9 +195,9 @@ if(global.keybinds[9]){	// 0 w, 1 a, 2 s, 3 d
 	
 }
 
-if(place_meeting(x, y - 32, Water_obj) and (global.playerArr[14][3] = 1)){
+if(place_meeting(x, y - 32, Water_obj) and (global.playerArr[14][3] > 0)){
 	vspeed -= 1
-	if(place_meeting(x, y - 86, Water_obj) and (global.playerArr[14][3] = 1)){
+	if(place_meeting(x, y - 86, Water_obj)){
 		vspeed -=0.7
 	}
 }

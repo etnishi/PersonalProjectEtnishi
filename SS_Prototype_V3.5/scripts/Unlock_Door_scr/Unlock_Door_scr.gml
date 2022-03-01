@@ -3,3 +3,7 @@
 function Unlock_Door(ins){
 	ins.locked = false
 }
+
+function Unlock_Story_Door(skey){
+	global.playerArr[16][3][skey] ++
+}

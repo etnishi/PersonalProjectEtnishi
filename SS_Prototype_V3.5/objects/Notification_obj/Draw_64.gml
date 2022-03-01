@@ -7,6 +7,8 @@ var tscale = 768 /  camera_get_view_height(view_camera[0])
 var line = ""
 draw_set_halign(fa_center)
 
+
+
 if(curFocus != ""){
 	if(pauseWhile){
 		if(saved_shot == ""){

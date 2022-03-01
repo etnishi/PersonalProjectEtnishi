@@ -20,6 +20,9 @@ if(playerRange){
 if(inDialog != ""){
 	if(!instance_exists(inDialog)){
 		inDialog = ""
+		if(postDialogScr != ""){
+			postDialogScr()
+		}
 	}
 }
 

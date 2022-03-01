@@ -9,4 +9,6 @@ arg = ""
 
 insSprite = ""
 
+arrInd = 0
+
 event_inherited()

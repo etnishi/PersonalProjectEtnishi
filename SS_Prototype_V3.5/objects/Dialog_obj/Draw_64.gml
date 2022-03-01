@@ -14,6 +14,7 @@ if(line != ""){
 	draw_sprite_ext(Dialog_box_spr, 0, xoff - 256, yoff + 16, tscale, tscale, 0, c_white, 1)
 	if(lines[curLine][1] != ""){
 		draw_sprite_ext(Dialog_portrait_spr, 0, xoff - 250, yoff + 16, tscale, tscale, 0, c_white, 1)
+		draw_sprite(lines[curLine][1], 0, xoff - 334, yoff + 26)
 	}
 	if(lines[curLine][2] != ""){
 		draw_sprite_ext(Dialog_name_spr, 0, xoff - 256, yoff + 22, tscale, tscale, 0, c_white, 1)

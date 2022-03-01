@@ -6,7 +6,7 @@ offset = -1
 
 target = ""
 
-behavior = [Idle_Basic, Charge_Basic]
+behavior = [Idle_Basic]
 idle = true
 actionCooldown = 0
 

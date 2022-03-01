@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 firstStep = true
+
+global.P_System = part_system_create_layer("Front_Instances", false)
+
 if(!instance_exists(Notification_obj)){
 	instance_create_layer(0, 0, "Front_Instances", Notification_obj)
 }

@@ -26,7 +26,10 @@ function Init_player_arr(){
 			activates if none are active and damage taken applies to it
 			ex. neutral > takes fire damage > hotRes activates > chillRes can't activate until hot wares off
 	*/
-	global.playerArr[16] = [[0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0]]
-	//		event flags	0 upgrade array, 1 health Up array, 2 
+	global.playerArr[16] = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 
+							[0, 0, 0, 0, 0, 0, 0], 
+							[0, 0, 0, 0, 0, 0, 0], 
+							[0, 0, 0, 0, 0, 0, 0]]
+	//		event flags	0 upgrade array, 1 health Up array, 2 energy up array, 3 story keys
 
 }

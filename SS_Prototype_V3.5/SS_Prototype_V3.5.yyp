@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"Player_obj","path":"objects/Player_obj/Player_obj.yy",},"order":1,},
     {"id":{"name":"Ladder_obj","path":"objects/Ladder_obj/Ladder_obj.yy",},"order":4,},
+    {"id":{"name":"Charge_Contact_scr","path":"scripts/Charge_Contact_scr/Charge_Contact_scr.yy",},"order":1,},
     {"id":{"name":"Environment_damage_obj","path":"objects/Environment_damage_obj/Environment_damage_obj.yy",},"order":13,},
     {"id":{"name":"Start_Load_Game","path":"scripts/Start_Load_Game/Start_Load_Game.yy",},"order":9,},
     {"id":{"name":"Save_point_obj","path":"objects/Save_point_obj/Save_point_obj.yy",},"order":16,},
@@ -18,6 +19,7 @@
     {"id":{"name":"Progressive_jump","path":"scripts/Progressive_jump/Progressive_jump.yy",},"order":1,},
     {"id":{"name":"Test_Environment_damage_obj","path":"objects/Test_Environment_damage_obj/Test_Environment_damage_obj.yy",},"order":5,},
     {"id":{"name":"Transition_obj","path":"objects/Transition_obj/Transition_obj.yy",},"order":8,},
+    {"id":{"name":"Ralof_Test_close","path":"sprites/Ralof_Test_close/Ralof_Test_close.yy",},"order":34,},
     {"id":{"name":"Parry_obj","path":"objects/Parry_obj/Parry_obj.yy",},"order":1,},
     {"id":{"name":"Enfironmental_damage_spr","path":"sprites/Enfironmental_damage_spr/Enfironmental_damage_spr.yy",},"order":18,},
     {"id":{"name":"Cone_spr","path":"sprites/Cone_spr/Cone_spr.yy",},"order":2,},
@@ -101,6 +103,7 @@
     {"id":{"name":"Parry_scr","path":"scripts/Parry_scr/Parry_scr.yy",},"order":1,},
     {"id":{"name":"Load_Game_Menu","path":"scripts/Load_Game_Menu/Load_Game_Menu.yy",},"order":10,},
     {"id":{"name":"StartMenu_scr","path":"scripts/StartMenu_scr/StartMenu_scr.yy",},"order":0,},
+    {"id":{"name":"Ralof_Test_","path":"sprites/Ralof_Test_/Ralof_Test_.yy",},"order":33,},
     {"id":{"name":"Key_spr","path":"sprites/Key_spr/Key_spr.yy",},"order":22,},
     {"id":{"name":"Sprite36","path":"sprites/Sprite36/Sprite36.yy",},"order":19,},
     {"id":{"name":"Marker_spr","path":"sprites/Marker_spr/Marker_spr.yy",},"order":3,},
