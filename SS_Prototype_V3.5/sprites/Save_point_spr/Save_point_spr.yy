@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Save_point_spr","path":"sprites/Save_point_spr/Save_point_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Save_point_spr",
     "tags": [],
     "resourceType": "GMSequence",

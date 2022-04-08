@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Screen_shadow_spr","path":"sprites/Screen_shadow_spr/Screen_shadow_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Screen_shadow_spr",
     "tags": [],
     "resourceType": "GMSequence",

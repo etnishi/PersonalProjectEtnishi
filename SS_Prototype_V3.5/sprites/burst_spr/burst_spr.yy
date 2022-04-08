@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"burst_spr","path":"sprites/burst_spr/burst_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "burst_spr",
     "tags": [],
     "resourceType": "GMSequence",

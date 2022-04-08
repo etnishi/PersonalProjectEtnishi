@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Solid_black_spr","path":"sprites/Solid_black_spr/Solid_black_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Solid_black_spr",
     "tags": [],
     "resourceType": "GMSequence",

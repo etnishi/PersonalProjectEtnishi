@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Dialog_box_spr","path":"sprites/Dialog_box_spr/Dialog_box_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Dialog_box_spr",
     "tags": [],
     "resourceType": "GMSequence",

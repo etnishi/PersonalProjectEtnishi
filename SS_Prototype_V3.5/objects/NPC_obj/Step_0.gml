@@ -15,6 +15,11 @@ if(playerRange){
 			inDialog = Start_Dialog(dialogLines)
 		}
 	}
+}else{
+	if(inDialog != ""){
+		instance_destroy(inDialog)
+		inDialog = ""
+	}
 }
 
 if(inDialog != ""){

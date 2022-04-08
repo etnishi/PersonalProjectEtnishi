@@ -95,7 +95,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Player_arm_spr","path":"sprites/Player_arm_spr/Player_arm_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Player_arm_spr",
     "tags": [],
     "resourceType": "GMSequence",

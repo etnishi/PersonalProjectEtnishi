@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Notification_box_spr","path":"sprites/Notification_box_spr/Notification_box_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Notification_box_spr",
     "tags": [],
     "resourceType": "GMSequence",

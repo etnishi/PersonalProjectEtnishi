@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Swing_spr","path":"sprites/Swing_spr/Swing_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Swing_spr",
     "tags": [],
     "resourceType": "GMSequence",

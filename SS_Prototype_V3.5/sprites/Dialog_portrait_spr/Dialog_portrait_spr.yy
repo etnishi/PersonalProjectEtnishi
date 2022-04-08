@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Dialog_portrait_spr","path":"sprites/Dialog_portrait_spr/Dialog_portrait_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Dialog_portrait_spr",
     "tags": [],
     "resourceType": "GMSequence",

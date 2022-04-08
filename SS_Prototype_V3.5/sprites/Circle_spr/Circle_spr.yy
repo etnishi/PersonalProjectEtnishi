@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Circle_spr","path":"sprites/Circle_spr/Circle_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Circle_spr",
     "tags": [],
     "resourceType": "GMSequence",

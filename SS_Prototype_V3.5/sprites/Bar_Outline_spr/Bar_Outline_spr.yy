@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Bar_Outline_spr","path":"sprites/Bar_Outline_spr/Bar_Outline_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Bar_Outline_spr",
     "tags": [],
     "resourceType": "GMSequence",

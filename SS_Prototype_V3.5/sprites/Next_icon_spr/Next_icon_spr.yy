@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Next_icon_spr","path":"sprites/Next_icon_spr/Next_icon_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Next_icon_spr",
     "tags": [],
     "resourceType": "GMSequence",

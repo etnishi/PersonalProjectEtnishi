@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Ralof_Test_close","path":"sprites/Ralof_Test_close/Ralof_Test_close.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Ralof_Test_close",
     "tags": [],
     "resourceType": "GMSequence",

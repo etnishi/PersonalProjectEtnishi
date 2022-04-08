@@ -80,7 +80,7 @@
     "name": "Sequences",
     "path": "folders/Sequences.yy",
   },
-  "resourceVersion": "1.3",
+  "resourceVersion": "1.4",
   "name": "rev_opening_seq",
   "tags": [],
   "resourceType": "GMSequence",

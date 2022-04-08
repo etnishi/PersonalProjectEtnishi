@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Upgrade_test_spr","path":"sprites/Upgrade_test_spr/Upgrade_test_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Upgrade_test_spr",
     "tags": [],
     "resourceType": "GMSequence",

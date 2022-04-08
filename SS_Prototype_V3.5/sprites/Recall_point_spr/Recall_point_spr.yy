@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Recall_point_spr","path":"sprites/Recall_point_spr/Recall_point_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Recall_point_spr",
     "tags": [],
     "resourceType": "GMSequence",

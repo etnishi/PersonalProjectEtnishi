@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Ralof_Test_","path":"sprites/Ralof_Test_/Ralof_Test_.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Ralof_Test_",
     "tags": [],
     "resourceType": "GMSequence",

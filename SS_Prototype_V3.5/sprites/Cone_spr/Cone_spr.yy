@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Cone_spr","path":"sprites/Cone_spr/Cone_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Cone_spr",
     "tags": [],
     "resourceType": "GMSequence",

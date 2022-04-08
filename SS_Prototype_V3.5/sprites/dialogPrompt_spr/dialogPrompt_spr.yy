@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"dialogPrompt_spr","path":"sprites/dialogPrompt_spr/dialogPrompt_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "dialogPrompt_spr",
     "tags": [],
     "resourceType": "GMSequence",

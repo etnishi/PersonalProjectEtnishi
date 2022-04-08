@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Fixed_Camera_spr","path":"sprites/Fixed_Camera_spr/Fixed_Camera_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Fixed_Camera_spr",
     "tags": [],
     "resourceType": "GMSequence",

@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+x = Player_obj.x
+y = Player_obj.y
+
 if(curInd < string_length(lines[curLine][0])){
 	curInd += scrSpd
 }

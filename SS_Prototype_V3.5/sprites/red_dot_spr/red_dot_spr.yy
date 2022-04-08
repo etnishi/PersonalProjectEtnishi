@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"red_dot_spr","path":"sprites/red_dot_spr/red_dot_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "red_dot_spr",
     "tags": [],
     "resourceType": "GMSequence",

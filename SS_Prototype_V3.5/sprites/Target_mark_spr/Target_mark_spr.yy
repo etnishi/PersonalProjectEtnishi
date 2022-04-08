@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Target_mark_spr","path":"sprites/Target_mark_spr/Target_mark_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Target_mark_spr",
     "tags": [],
     "resourceType": "GMSequence",

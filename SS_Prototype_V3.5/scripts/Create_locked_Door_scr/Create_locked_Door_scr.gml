@@ -6,6 +6,7 @@ function Create_locked_Door(xpos, ypos, kx, ky, nd){
 	ins.locked = true
 	
 	var ins2 = instance_create_layer(kx, ky, "Instances", Key_obj)
+	ins2.desc = "Temporarily Opened nearby Door"
 	ins2.arg = ins
 	ins2.ind = nd
 	ins2.arrInd = 1

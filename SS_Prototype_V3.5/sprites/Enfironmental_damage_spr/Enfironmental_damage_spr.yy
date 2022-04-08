@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Enfironmental_damage_spr","path":"sprites/Enfironmental_damage_spr/Enfironmental_damage_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Enfironmental_damage_spr",
     "tags": [],
     "resourceType": "GMSequence",

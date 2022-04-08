@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Room_portal_spr","path":"sprites/Room_portal_spr/Room_portal_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Room_portal_spr",
     "tags": [],
     "resourceType": "GMSequence",

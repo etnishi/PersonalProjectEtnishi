@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Moving_Water_spr","path":"sprites/Moving_Water_spr/Moving_Water_spr.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Moving_Water_spr",
     "tags": [],
     "resourceType": "GMSequence",
